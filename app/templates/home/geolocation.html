@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Geolocation Of Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+</head>
+
+<body>
+<div id="main" class="container"> 	
+	<form name="website" id="website" action="#" method="post"> 
+		<p class="website-name">
+		<label for="website_name">Website </label> 
+			<input type="text" name="website" id="website" class="input" placeholder="Website Address" value="" size="20" /> 
+		</p> 
+		<!-- <p class="login-password"> 
+		<label for="user_pass">Password</label><input type="password" name="pwd" id="user_pass" class="input" placeholder="Password" value="" size="20" /> 
+		</p> -->
+		<!-- <p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p> -->
+		<!-- <p  class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"></p> -->
+		<p class="submit"><input type="submit" name="submit" id="submit" class="button-primary" value="Submit" />
+		<input type="hidden" name="redirect_to" value="#"/>
+		</p> 	
+	</form>
+	<!--js-->
+    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+</div>
+</body>
+
+
+<!--
+
+<body>
+	<form method="POST">
+		<label for="user_login">Username</label> 
+		<input name="text">
+		<input type="submit">
+	</form>
+</body> -->
+
+</html>
